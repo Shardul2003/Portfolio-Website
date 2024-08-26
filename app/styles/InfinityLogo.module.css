@@ -1,0 +1,17 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .infinity-logo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: url('/infinity-logo.svg') no-repeat center center / contain;
+    animation: spin 5s linear infinite;
+  }
+  
