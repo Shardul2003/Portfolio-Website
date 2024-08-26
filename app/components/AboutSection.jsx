@@ -2,6 +2,7 @@
 import React, {useState, useTransition} from 'react';
 import TabButton from './TabButton';
 import Image from 'next/image';
+// import fs-image from 'public/images/Fullstack_Image.png';
 
 const TAB_DATA = [
     {
@@ -66,7 +67,7 @@ const AboutSection = () => {
   return (
     <section id="about" className='text-white'>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-            <Image src="/images/Fullstack_image.png" width={500} height={500} />
+            <Image src={"/static/images/Fullstack_image.png"} width={500} height={500} alt="picture of fullstack tools and technologies"/>
             {/* image reference/citation: https://www.linkedin.com/pulse/demystifying-modern-full-stack-development-overview-aadithyan-dqmec */}
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
