@@ -39,11 +39,11 @@ const HeroSection = () => {
                     </p>
                     <div>
 
-                        <Link href="mailto:shardul21@vt.edu" passHref legacyBehavior>
+                        <a href="mailto:shardul21@vt.edu" method="POST">
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-blue-500 to-pink-500 hover:bg-slate-200 text-white">
                             Hire Me
                         </button>
-                        </Link>
+                        </a>
                         
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 via-blue-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
                             <a download href="./resume.pdf" >

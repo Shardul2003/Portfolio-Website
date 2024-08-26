@@ -69,6 +69,7 @@ const ContactSection = () => {
         <div
         className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse w-64 h-24"
         >
+            <a href="mailto:shardul21@vt.edu" method="POST">
             <button type="submit" className="w-full sm:w-auto bg-slate-800 hover:border-purple-500 focus:ring-4 focus:outline-none focus:ring-purple-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
                 <div className="mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="24px" height="24px" stroke="currentColor">
@@ -83,6 +84,7 @@ const ContactSection = () => {
                     
                 </div>
             </button>
+            </a>
         </div>
         
 
