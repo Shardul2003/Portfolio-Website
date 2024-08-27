@@ -13,6 +13,15 @@ const projectsData =[
         gitUrl: "https://github.com/Shardul2003/Machine_Learning_Blogs",
         previewUrl: "https://shardul2003.github.io/Machine_Learning_Blogs/blog.html",
     },
+    // {
+    //     id: 2,
+    //     title: "Personal Website",
+    //     description: "The website you are looking at right now!",
+    //     image: "/images/projects/Portfolio_Image.png",
+    //     tag: ["All", "Web"],
+    //     gitUrl: "https://github.com/Shardul2003/Portfolio-Website",
+    //     previewUrl: "https://portfolio-website-one-virid.vercel.app/",
+    // }
 ]
 
 const ProjectsSection = () => {
