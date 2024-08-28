@@ -9,7 +9,7 @@ const TAB_DATA = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 h-20">
                 <li>Web Development & Design</li>
                 <li>Fullstack Development</li>
                 <li>Machine Learning</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 h-20">
                 <li>M.Eng in Computer Science @ Virginia Tech</li>
                 <li>B.S. in Computer Science @ Virginia Tech</li>
             </ul>
@@ -32,7 +32,7 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 h-20">
                 <li>Software Engineering Intern - Coherent Corp.</li>
                 <li>Software Engineering Intern - GEICO</li>
                 <li>Undergraduate Research Assistant - BIST Lab at Virginia Tech</li>
@@ -45,7 +45,7 @@ const TAB_DATA = [
         title: "Certifications",
         id: "certifications",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 h-20">
                 <li>Machine Learning Specialization (Coursera)</li>
                 <li>Fullstack Development Bootcamp (Udemy)</li>
                 <li>Advanced Technical Interview Prep (CodePath)</li>

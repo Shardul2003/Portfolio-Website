@@ -21,14 +21,14 @@ const HeroSection = () => {
                                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                                 'A Fullstack Developer',
                                 1000,
-                                'A Machine Learning Engineer',
+                                'An AI/ML Engineer',
                                 1000,
                                 'A Graduate Student',
                                 1000
                             ]}
                             wrapper="span"
                             speed={35}
-                            style={{ fontSize: '1em', display: 'inline-block' }}
+                            style={{ fontSize: '1em', display: 'inline-block',}}
                             repeat={Infinity}
                         />
                     </h1>

@@ -7,7 +7,7 @@ const projectsData =[
     {
         id: 1,
         title: "Machine Learning Blog Site",
-        description: "I created a dynamic blog site using R and Python to showcase various ML techniques. Each blog I authored details the ML processes I applied, from data/exploratory analysis to algorithm application",
+        description: "I created a dynamic blog site using R and Python to showcase various ML techniques. Each blog I authored details the ML processes I applied, from data/exploratory analysis to algorithm application.",
         image: "/images/projects/ML_Blog_Project_Preview.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/Shardul2003/Machine_Learning_Blogs",
