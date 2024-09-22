@@ -9,7 +9,7 @@ const TAB_DATA = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="list-disc pl-2 h-20">
+            <ul className="list-disc pl-2 h-28">
                 <li>Web Development & Design</li>
                 <li>Fullstack Development</li>
                 <li>Machine Learning</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-            <ul className="list-disc pl-2 h-20">
+            <ul className="list-disc pl-2 h-28">
                 <li>M.Eng in Computer Science @ Virginia Tech</li>
                 <li>B.S. in Computer Science @ Virginia Tech</li>
             </ul>
@@ -32,7 +32,7 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-            <ul className="list-disc pl-2 h-20">
+            <ul className="list-disc pl-2 h-28">
                 <li>Software Engineering Intern - Coherent Corp.</li>
                 <li>Software Engineering Intern - GEICO</li>
                 <li>Undergraduate Research Assistant - BIST Lab at Virginia Tech</li>
@@ -45,7 +45,7 @@ const TAB_DATA = [
         title: "Certifications",
         id: "certifications",
         content: (
-            <ul className="list-disc pl-2 h-20">
+            <ul className="list-disc pl-2 h-28">
                 <li>Machine Learning Specialization (Coursera)</li>
                 <li>Fullstack Development Bootcamp (Udemy)</li>
                 <li>Advanced Technical Interview Prep (CodePath)</li>
@@ -76,7 +76,7 @@ const AboutSection = () => {
             I am currently completing my Masters in Computer Science, and graduating in May 2025. 
             As a Fullstack Engineer, I have completed two internships at large companies these past few summers,
             gaining experience with tools and technologies like 
-            React, Angular, JavaScript, Node.js, Express, MongoDB, Git, Docker, Jira, and more.
+            React, Angular, JavaScript, Node.js, Express, MongoDB, Git, Docker, JIRA, and more.
             I love to learn about new technologies and am always looking to expand my knowledge and skill set. 
             I am a team player and can take on leadership roles when necessary,
             and built these skills during my time as President of ACM at Virginia Tech, an organizer for VT Hacks, and group projects in my CS courses.
