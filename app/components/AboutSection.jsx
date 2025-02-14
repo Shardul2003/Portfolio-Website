@@ -76,7 +76,7 @@ const AboutSection = () => {
             I am currently completing my Masters in Computer Science, and graduating in May 2025. 
             As a Fullstack Engineer, I have completed two internships at large companies these past few summers,
             gaining experience with tools and technologies like 
-            React, Angular, JavaScript, Node.js, Express, MongoDB, Git, Docker, JIRA, and more.
+            React, Angular, JavaScript, Node.js, Express, MongoDB, Git, AWS, Docker, JIRA, and more.
             I love to learn about new technologies and am always looking to expand my knowledge and skill set. 
             I am a team player and can take on leadership roles when necessary,
             and built these skills during my time as President of ACM at Virginia Tech, an organizer for VT Hacks, and group projects in my CS courses.
