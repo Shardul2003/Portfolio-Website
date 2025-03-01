@@ -6,16 +6,6 @@ import ProjectTag from './ProjectTag';
 const projectsData =[
     {
         id: 1,
-        title: "Machine Learning Blog Site",
-        description: "I created a dynamic blog site using R and Python to showcase various ML techniques. Each blog I authored details the ML processes I applied, from data/exploratory analysis to algorithm application.",
-        image: "/images/projects/ML_Blog_Project_Preview.png",
-        tag: ["All", "Web"],
-        techStack: ["Python", "R", "RStudio", "Quarto", "ML Libraries"],
-        gitUrl: "https://github.com/Shardul2003/Machine_Learning_Blogs",
-        previewUrl: "https://shardul2003.github.io/Machine_Learning_Blogs/blog.html",
-    },
-    {
-        id: 2,
         title: "SkillSprint",
         description: "Enter a link for a technical job posting to get your very own personalized study guide, designed to help you prepare for the job and its interviews!",
         image: "/images/projects/SkillSprint_Image2.png",
@@ -23,6 +13,27 @@ const projectsData =[
         techStack: ["Flask", "Python", "REST APIs", "Next.js", "JavaScript", "Tailwind"],
         gitUrl: "https://github.com/Shardul2003/SkillSprint",
         previewUrl: "https://devpost.com/software/skillsprint",
+    },
+    {
+        id: 2,
+        title: "Graph Neural Networks",
+        description: "Music genre classification is a common application of deep learning and generally uses CNNs and RNNs to identify patterns in audio features. Here, we explore Graph Neural Networks (GNNs) and their practical applications for music genre classification. ",
+        image: "/images/projects/GNN_Project_Image.png",
+        imageReference: "https://www.researchgate.net/figure/llustration-of-transductive-and-inductive-settings-for-relation-prediction-in-knowledge_fig1_337336600",
+        tag: ["All"],
+        techStack: ["PyTorch", "Jupyter", "Model Optimization", "Graph Convolutional Networks"],
+        gitUrl: "https://github.com/Shardul2003/GNN-Music-Classification",
+        previewUrl: "https://github.com/Shardul2003/GNN-Music-Classification/blob/main/docs/GNN_Final_Paper.pdf",
+    },
+    {
+        id: 3,
+        title: "Machine Learning Blog Site",
+        description: "I created a dynamic blog site using R and Python to showcase various ML techniques. Each blog I authored details the ML processes I applied, from data/exploratory analysis to algorithm application.",
+        image: "/images/projects/ML_Blog_Project_Preview.png",
+        tag: ["All", "Web"],
+        techStack: ["Python", "R", "RStudio", "Quarto", "ML Libraries"],
+        gitUrl: "https://github.com/Shardul2003/Machine_Learning_Blogs",
+        previewUrl: "https://shardul2003.github.io/Machine_Learning_Blogs/blog.html",
     },
 ]
 
