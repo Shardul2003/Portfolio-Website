@@ -24,7 +24,7 @@ const ContactSection = () => {
             <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
             <p className="text-[#ADB7BE] mb-4 max-w-md">
                 {" "}
-                I'm always looking for new and exciting opportunities! If you would like to collaborate or chat with me, feel free to message me via email or LinkedIn.
+                I'm always happy to connect, collaborate, or just talk tech! Feel free to reach out via email or LinkedIn.
             </p>
         </div>
 
@@ -69,7 +69,7 @@ const ContactSection = () => {
         <div
         className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse w-64 h-24"
         >
-            <a href="mailto:shardul21@vt.edu" method="POST">
+            <a href="mailto:shardul.dhongade@outlook.com" method="POST">
             <button type="submit" className="w-full sm:w-auto bg-slate-800 hover:border-purple-500 focus:ring-4 focus:outline-none focus:ring-purple-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
                 <div className="mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="24px" height="24px" stroke="currentColor">

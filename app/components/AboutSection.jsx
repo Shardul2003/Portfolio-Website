@@ -1,56 +1,58 @@
 'use client';
 import React, {useState, useTransition} from 'react';
 import TabButton from './TabButton';
-import Image from 'next/image';
-// import fs-image from 'public/images/Fullstack_Image.png';
+import {
+    CodeBracketIcon,
+    AcademicCapIcon,
+    BriefcaseIcon,
+    CheckBadgeIcon,
+    CheckCircleIcon,
+} from '@heroicons/react/24/solid';
 
 const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
-        content: (
-            <ul className="list-disc pl-2 min-h-28">
-                <li>Web Development & Design</li>
-                <li>Fullstack Development</li>
-                <li>Machine Learning</li>
-                <li>DevOps</li>
-                <li>Agile/Scrum</li>
-            </ul>
-        )
+        icon: CodeBracketIcon,
+        content: [
+            "Web Development & Design",
+            "Fullstack Development",
+            "Machine Learning & AI/LLM Engineering",
+            "DevOps",
+            "Agile/Scrum",
+        ]
     },
     {
         title: "Education",
         id: "education",
-        content: (
-            <ul className="list-disc pl-2 min-h-28">
-                <li>M.Eng in Computer Science @ Virginia Tech</li>
-                <li>B.S. in Computer Science @ Virginia Tech</li>
-            </ul>
-        )
+        icon: AcademicCapIcon,
+        content: [
+            "M.Eng in Computer Science @ Virginia Tech",
+            "B.S. in Computer Science @ Virginia Tech",
+        ]
     },
     {
         title: "Experience",
         id: "experience",
-        content: (
-            <ul className="list-disc pl-2 min-h-28">
-                <li>Software Engineering Intern - Coherent Corp.</li>
-                <li>Software Engineering Intern - GEICO</li>
-                <li>Undergraduate Research Assistant - BIST Lab at Virginia Tech</li>
-                <li>President - Association for Computing Machiney (ACM)</li>
-
-            </ul>
-        )
+        icon: BriefcaseIcon,
+        content: [
+            "Associate Software Engineer - Capital One",
+            "Software Engineering Intern (AI) - Coherent Corp.",
+            "Software Engineering Intern - Coherent Corp.",
+            "Software Engineering Intern - GEICO",
+            "Undergraduate Research Assistant - BIST Lab at Virginia Tech",
+            "President - Association for Computing Machiney (ACM)",
+        ]
     },
     {
         title: "Certifications",
         id: "certifications",
-        content: (
-            <ul className="list-disc pl-2 min-h-28">
-                <li>Machine Learning Specialization (Coursera)</li>
-                <li>Fullstack Development Bootcamp (Udemy)</li>
-                <li>Advanced Technical Interview Prep (CodePath)</li>
-            </ul>
-        )
+        icon: CheckBadgeIcon,
+        content: [
+            "Machine Learning Specialization (Coursera)",
+            "Fullstack Development Bootcamp (Udemy)",
+            "Advanced Technical Interview Prep (CodePath)",
+        ]
     }
 ]
 
@@ -64,63 +66,70 @@ const AboutSection = () => {
         });
     }
 
+    const activeTab = TAB_DATA.find((t) => t.id === tab);
+
   return (
-    <section id="about" className='text-white'>
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-            {/* <Image src="/images/Fullstack_image.png" width={500} height={500} alt="picture of fullstack tools and technologies"/> */}
-            {/* image reference/citation: https://www.linkedin.com/pulse/demystifying-modern-full-stack-development-overview-aadithyan-dqmec */}
-        </div>
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-            <h2 className="text-4xl text-center justify-center font-bold text-white mb-4">About Me</h2>
-            <p className="text-base md:text-lg">
-            I am currently completing my Masters in Computer Science, and graduating in May 2025. 
-            As a Fullstack Engineer, I have completed two internships at large companies these past few summers,
-            gaining experience with tools and technologies like 
-            React, Angular, JavaScript, Node.js, Express, MongoDB, Git, AWS, Docker, JIRA, and more.
-            I love to learn about new technologies and am always looking to expand my knowledge and skill set. 
-            I am a team player and can take on leadership roles when necessary,
-            and built these skills during my time as President of ACM at Virginia Tech, an organizer for VT Hacks, and group projects in my CS courses.
-            </p>
-            <div className='flex flex-row mt-8'>
-            <TabButton 
-                selectTab={() => handleTabChange("skills")} 
-                active={tab === "skills"}
-            > 
-                { " " }
-                Skills{ " " }
-            </TabButton>
+    <div id="about">
+        <h2 className="text-center text-4xl font-bold text-white mt-4">
+            About Me
+        </h2>
 
-            <TabButton 
-                selectTab={() => handleTabChange("education")} 
-                active={tab === "education"}
-            > 
-                { " " }
-                Education{ " " }
-            </TabButton>
+        <section className="grid md:grid-cols-2 my-12 py-8 gap-8 md:gap-16 items-start relative">
+            <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-0 right-0"></div>
 
-            <TabButton 
-                selectTab={() => handleTabChange("experience")} 
-                active={tab === "experience"}
-            > 
-                { " " }
-                Experience{ " " }
-            </TabButton>
+            <div className="z-10">
+                <p className="text-base md:text-lg text-[#ADB7BE] leading-relaxed">
+                I'm a Software Engineer at Capital One, where I work on the Messaging Platform team building
+                fullstack and backend systems. I completed my M.Eng in Computer Science at Virginia Tech in 2025,
+                after three internships gaining experience with tools and technologies like
+                React, Go, Java, Node.js, AWS, Docker, LangChain, and more.
+                I love to learn about new technologies and am always looking to expand my knowledge and skill set.
+                I am a team player and can take on leadership roles when necessary,
+                and built these skills during my time as President of ACM at Virginia Tech, an organizer for VT Hacks, and group projects in my CS courses.
+                </p>
 
-            <TabButton 
-                selectTab={() => handleTabChange("certifications")}
-                active={tab === "certifications"}
-            > 
-                { " " }
-                Certifications{ " " }
-            </TabButton>
+                <div className="flex flex-wrap gap-3 mt-6">
+                    <span className="flex items-center gap-2 text-sm text-[#ADB7BE] border border-[#33353F] rounded-full px-4 py-2">
+                        <BriefcaseIcon className="h-4 w-4 text-purple-500" />
+                        SWE @ Capital One
+                    </span>
+                    <span className="flex items-center gap-2 text-sm text-[#ADB7BE] border border-[#33353F] rounded-full px-4 py-2">
+                        <AcademicCapIcon className="h-4 w-4 text-purple-500" />
+                        M.Eng, 2025
+                    </span>
+                    <span className="flex items-center gap-2 text-sm text-[#ADB7BE] border border-[#33353F] rounded-full px-4 py-2">
+                        <CheckBadgeIcon className="h-4 w-4 text-purple-500" />
+                        ACM President
+                    </span>
+                </div>
             </div>
-            <div className="mt-8">
-                {TAB_DATA.find((t) => t.id === tab).content}
+
+            <div className="z-10 bg-[#181818] border border-[#33353F] rounded-xl p-6 md:p-8">
+                <div className="flex flex-wrap gap-x-6 gap-y-3">
+                    {TAB_DATA.map((t) => (
+                        <TabButton
+                            key={t.id}
+                            selectTab={() => handleTabChange(t.id)}
+                            active={tab === t.id}
+                            icon={t.icon}
+                        >
+                            {t.title}
+                        </TabButton>
+                    ))}
+                </div>
+
+                <ul className={`flex flex-col gap-3 min-h-[14rem] mt-6 transition-opacity duration-300 ${isPending ? "opacity-0" : "opacity-100"}`}>
+                    {activeTab.content.map((item, index) => (
+                        <li key={index} className="flex items-start gap-3 text-[#ADB7BE]">
+                            <CheckCircleIcon className="h-5 w-5 text-purple-500 shrink-0 mt-0.5" />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
   )
 }
 
 export default AboutSection
-

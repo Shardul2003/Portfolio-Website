@@ -18,12 +18,10 @@ const HeroSection = () => {
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
                                 'Shardul',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000, // wait 1s before replacing text
                                 'A Fullstack Developer',
                                 1000,
                                 'An AI/ML Engineer',
-                                1000,
-                                'A Graduate Student',
                                 1000
                             ]}
                             wrapper="span"
@@ -33,15 +31,15 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Hi there! I'm Shardul Dhongade, a Software Engineer and currently a graduate student at Virginia Tech.
+                        Hi there! I'm Shardul Dhongade, a Software Engineer and a Virginia Tech graduate (M.Eng in Computer Science).
                         I have experience in Fullstack Development, Algorithms and Machine Learning, and DevOps.
                         You can learn more about me below!
                     </p>
                     <div>
 
-                        <a href="mailto:shardul21@vt.edu" method="POST">
+                        <a href="mailto:shardul.dhongade@outlook.com" method="POST">
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-blue-500 to-pink-500 hover:bg-slate-200 text-white">
-                            Hire Me
+                            Get In Touch
                         </button>
                         </a>
                         
